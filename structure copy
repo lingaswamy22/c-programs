@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct stud
+{
+    char name[20];
+    int roll;
+    float marks;
+};
+void main(void)
+{
+   struct stud ss1={"rkljl",33,22.22};
+   struct stud ss2;
+    ss2=ss1;
+    printf("name=%s rollno=%d marsk=%f",ss2.name,ss2.roll,ss2.marks);
+}
