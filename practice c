@@ -1,0 +1,53 @@
+#include<stdio.h>
+int  main()
+{
+    int num,num1,max=1,max1,pos,i,count=0,n,num2;
+    int a[10];
+    printf("enter the num =");
+    scanf("%d",&num);
+    printf("enter the pos want to know and change\n");
+    scanf("%d",&pos);
+    num1=num;
+   /* for(i=0;num1>0;i++)    
+     {    
+     a[i]=num1%2;    
+     num1=num1/2;    
+     }    
+     printf("\nBinary of Given Number is=");    
+     for(i=i-1;i>=0;i--)    
+     {    
+     printf("%d",a[i]);    
+     }*/    
+   for(i=0;0<num1;i++)
+    {
+        n=num1%2;
+        //printf("n=%d\t",n);
+        num1=num1/2;
+        //printf("num1=%d\t",nu,m1);
+        a[i]=n;
+        //printf("a[i]=%d\t",a[i]);
+    }
+    printf("\n");
+    for(i=i-1;i>=0;i--)
+    {
+        printf("%d\t",a[i]);
+    }
+    printf("\n");
+    
+    max1=num&((max<<pos));
+    max=(max1>>pos);
+    printf("pos bit is %d and ",max);
+    num&=~max1;
+    printf("after clear the bit value is %d\n",num);
+    num2=num;
+    for(i=0;0<num2;i++)
+    {
+        n=num2%2;
+        num2=num2/2;
+        a[i]=n;
+    }
+    for(i=i-1;i>=0;i--)
+    {
+        printf("%d\t",a[i]);
+    }
+}
